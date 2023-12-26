@@ -42,6 +42,10 @@ minima:
   # solarized-dark	   Dark variant of solarized color scheme.
   # solarized	         Adaptive skin for solarized color scheme skins.
   skin: dark
+
+  social_links:
+    github: tusharmurali
+    linkedin: tushar-muralidharan
   
   # Minima date format.
   # The default value is "%b %d, %Y" (e.g. Nov 14, 2023) 

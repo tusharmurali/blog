@@ -61,6 +61,9 @@ layout: base
     {%- endif %}
 
   {%- endif -%}
+
+  {%- if site.tags.size > 3 -%}
   {% include archive.html %}
+  {%- endif -%}
 
 </div>

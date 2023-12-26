@@ -1,7 +1,8 @@
-title: Your awesome title
+title: Tushar's Blog
 author:
-  name: GitHub User
+  name: Tushar Muralidharan
   email: your-email@domain.com
+  website: tusharmurali.github.io
 
 # The `>` after `description:` means to ignore line-breaks until next key.
 # If you want to omit the line-break after the end of text, use `>-` instead.

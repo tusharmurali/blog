@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "This post demonstrates post content styles"
-tags: junk
+tags: miscellaneous
 author:
 - Tushar Muralidharan
 ---

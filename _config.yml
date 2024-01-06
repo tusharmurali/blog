@@ -3,7 +3,8 @@ author:
   name: Tushar Muralidharan
   email: tusharmurali.math@gmail.com
 
-url: "https://tusharmurali.github.io/blog"
+url: "https://tusharmurali.github.io"
+baseurl: "/blog"
 
 disqus:
   shortname: tusharmurali

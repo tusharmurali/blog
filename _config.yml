@@ -6,9 +6,6 @@ author:
 url: "https://tusharmurali.github.io"
 baseurl: "/blog"
 
-disqus:
-  shortname: tusharmurali
-
 show_excerpts: true
 google_analytics: G-RXRLJPQ1DC
 

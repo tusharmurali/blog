@@ -1,5 +1,5 @@
 ---
 layout: tag
-title: "Tag: mathematics"
+title: "Articles tagged with \"mathematics\""
 tag: mathematics
 ---

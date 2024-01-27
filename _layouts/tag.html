@@ -2,14 +2,16 @@
 layout: default
 ---
 <div class="post">
-  <h1>Tag: {{ page.tag }}</h1>
-  <ul>
+  <h1>Articles tagged with "{{ page.tag }}"</h1>
+  <ul style="padding-top: 16px;">
     {% for post in site.tags[page.tag] %}
-    <li><a href="/blog/{{ post.url }}">{{ post.title }}</a> ({{ post.date | date_to_string }})<br>
+    <li><a href="/solutions/{{ post.url }}">{{ post.title | markdownify | remove: '<p>' | remove: '</p>' | strip_newlines }}</a>, published {{ post.date | date: "%Y-%m-%d" }}</li>
+    <!-- <li><a href="/solutions/{{ post.url }}">{{ post.title | markdownify | remove: '<p>' | remove: '</p>' | strip_newlines }}</a> ({{ post.date | date_to_string }})<br>
       {{ post.description }}
-    </li>
+    </li> -->
     {% endfor %}
   </ul>
 </div>
 <hr>
 {% include archive.html %}
+

@@ -1,5 +1,5 @@
 ---
 layout: tag
-title: "Tag: philosophy"
+title: "Articles tagged with \"philosophy\""
 tag: philosophy
 ---

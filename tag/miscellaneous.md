@@ -1,5 +1,5 @@
 ---
 layout: tag
-title: "Tag: miscellaneous"
+title: "Articles tagged with \"miscellaneous\""
 tag: miscellaneous
 ---

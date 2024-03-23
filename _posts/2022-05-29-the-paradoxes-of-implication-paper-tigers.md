@@ -8,9 +8,9 @@ author:
 The goal of logic is to formalize arguments. Arguments take the form of natural language, which subjects them to varying interpretations. On occasion, we encounter provable logical statements that are incongruous with our intuitive reasoning. The paradoxes of implication are just that — a set of provable logical statements whose conclusions do not depend on their premises [[2](#paradoxes)]. These paradoxes are made possible because, in classical logic, a true statement is implied by any statement, and a false statement implies any statement. Consider the following statement. *If this paper is wet and this paper is not wet, then the Moon is made out of cheese.* Many observers find these statements unsettling; what does the condition of this paper tell you about the Moon? Surprisingly, this statement has a proof in classical logic. If $p$ is the statement that this paper is wet, and $q$ is the statement that the Moon is made out of cheese, then we proceed as follows:
 
 \\[p, \neg p \vdash q\\]
-\begin{array} {|r|r|}\hline 0_0 & $\int$ & $x$ & 0_3 \\ \hline 1_0 & 1_1 & 1_2 & 1_3 \\ \hline 2_0 & 2_1 & 2_2 & 2_3 \\ \hline 3_0 & 3_1 & 3_2 & 3_3 \\ \hline  \end{array}
+\begin{array} {|r|r|}\hline 0_0 & $\int$ & $x$ & 0_3 \\\\ \hline 1_0 & 1_1 & 1_2 & 1_3 \\\\ \hline 2_0 & 2_1 & 2_2 & 2_3 \\\\ \hline 3_0 & 3_1 & 3_2 & 3_3 \\\\ \hline  \end{array}
 
-## Refernces
+## References
 
 [<a name="anderson-belnap">1</a>] Anderson, A.R. and Belnap, N.D., 1975. *Entailment: The Logic of Relevance and Neccessity*. Volume 1. Princeton: Princeton University Press.
 

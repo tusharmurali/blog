@@ -22,7 +22,7 @@ It should be stated that statements that seem absurd are not automatically wrong
 
 The principles behind the paradoxes of implication cannot be disturbed without causing a greater catastrophe than the paradoxes themselves. For instance, consider a simple proof of the paradox of entailment as follows
 
-\begin{array} {ll} 1. & p \land \neg p &  \\\\ 2. & p & \text{from 1} \\\\ 3. & p \lor q & \text{from 2} \\\\ 4. & \neg p & \text{from 3} \\\\ 5. & q & \text{from 3,4}  \end{array}
+\begin{array} {ll} 1. & p \land \neg p &  \\\\ 2. & p & \text{from 1} \\\\ 3. & p \lor q & \text{from 2} \\\\ 4. & \neg p & \text{from 1} \\\\ 5. & q & \text{from 3,4}  \end{array}
 
 where the last step uses the disjunctive syllogism [[2](#paradoxes)]. Then, anyone who sets out to resolve these paradoxes must propose a system that makes at least one of these rules impossible, requiring lengthy development and justification. He must also acknowledge the fact that the paradoxes of implication are easily understood with a minute shift in the way one thinks about implication. Therefore, I propose, a large-scale modification of classical logic would be unproductive.
 

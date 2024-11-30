@@ -34,7 +34,11 @@ layout: base
   </header>
 
   <div class="post-content e-content" itemprop="articleBody">
-    {{ content }}
+    {%- if page.toc != false -%}
+      {% include toc.html html=content %}
+    {%- endif -%}
+    {% include anchor_headings.html html=content anchorBody="#" %}
+    <!-- {{ content }} -->
   </div>
 
   <script src="https://utteranc.es/client.js"

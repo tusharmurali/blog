@@ -2,6 +2,7 @@
 layout: post
 title: "The Paradoxes of Implication: Paper Tigers"
 tags: philosophy
+toc: false
 author:
   - Tushar Muralidharan
 ---

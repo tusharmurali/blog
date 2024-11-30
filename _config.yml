@@ -7,7 +7,7 @@ url: "https://tusharmurali.github.io"
 baseurl: "/blog"
 
 show_excerpts: true
-google_analytics:
+google_analytics: G-RXRLJPQ1DC
 
 # The `>` after `description:` means to ignore line-breaks until next key.
 # If you want to omit the line-break after the end of text, use `>-` instead.

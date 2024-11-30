@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Introduction to Category Theory"
+title: "An Introduction to Category Theory"
 tags: mathematics
 ordered_toc: true
 author:

@@ -60,7 +60,7 @@ X @\>{g \circ f}\>\> Z
 X @\>{f}\>\> Y @\>{g}\>\> Z
 \end{CD}$, define $\begin{CD}
 X @\>{g \circ f}\>\> Z
-\end{CD}$ by $x \mapsto g(f(x))$.
+\end{CD}$ by 
 
 ## Footnotes
 

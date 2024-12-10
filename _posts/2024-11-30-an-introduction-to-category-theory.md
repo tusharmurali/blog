@@ -68,4 +68,4 @@ X @\>{g \circ f}\>\> Z
 [^endomorphisms]: Morphisms from an object to itself are called **endomorphisms**.
 [^domain]: Given $\begin{CD} X @\>{f}\>\> Y \end{CD}$, $X$ is called the **domain** of $f$ and $Y$ is called the **codomain** of $f$.
 [^composition]: We can view composition as a family of functions $\mathcal{C}(Y,Z) \times \mathcal{C}(X,Y) \to \mathcal{C}(X,Z)$ for each triple of objects $X,Y,Z \in \|\mathcal{C}\|$, defined by $(g,f) \mapsto g \circ f$.
-[^russell]: By [Russell's paradox](https://en.wikipedia.org/wiki/Russell%27s_paradox), the collection of all sets is not a set.
+[^russell]: By [Russell's paradox](https://en.wikipedia.org/wiki/Russell%27s_paradox), the collection of all sets is not a set; instead, it is a proper class.

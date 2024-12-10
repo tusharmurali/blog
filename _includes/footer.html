@@ -25,6 +25,35 @@
       </div>
       <div class="footer-col">
         <p>{{ site.description | escape }}</p>
+        <div id="skin-switch-container" style="display: block;">
+          Page rendered with the <select id="skin-switch" onchange="changeSkin()">
+            <option value="dark.css">dark</option>
+            <option value="classic.css">classic</option>
+            <option value="solarized-dark.css">solarized-dark</option>
+            <option value="solarized-light.css">solarized-light</option>
+            <option value="auto.css">auto</option>
+            <option value="solarized.css">solarized</option>
+          </select> skin of Minima theme.
+        </div>
+        <script>
+          var metaTag = document.getElementById("stylesheet");
+          var SSHref = metaTag.href;
+          var SSName = (SSHref.substring(SSHref.lastIndexOf('/') + 1));
+
+          document.getElementById("skin-switch").value = SSName;
+
+          var savedTheme = localStorage.getItem("theme");
+          if (savedTheme) {
+            metaTag.href = SSHref.replace(SSName, savedTheme);
+            document.getElementById("skin-switch").value = savedTheme;
+          }
+
+          function changeSkin() {
+            var selectedTheme = event.target.value;
+            metaTag.href = SSHref.replace(SSName, selectedTheme);
+            localStorage.setItem("theme", selectedTheme);
+          }
+        </script>
       </div>
     </div>
 

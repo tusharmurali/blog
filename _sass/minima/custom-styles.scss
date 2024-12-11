@@ -13,27 +13,17 @@
 }
 
 #toc {
-    list-style-type: decimal;
-
+    counter-reset: item;
     > li {
-        counter-reset: item;
-
-        &::before {
         counter-increment: item;
-        content: "";
-        }
-
-        ol {
-        list-style-type: none;
-
-        li {
+        ol > li {
             counter-increment: subitem;
-
+            display: block;
             &::before {
-            padding-right: 0.6em;
-            content: counter(item) "." counter(subitem) ".";
+                content: counters(item, ".") "." counters(subitem, ".") ".";
+                padding-right: 0.6em;
+                margin-left: -20px;
             }
-        }
         }
     }
 }

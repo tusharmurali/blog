@@ -7,7 +7,7 @@ author:
   - Tushar Muralidharan
 ---
 
-> "Category theory is the mathematics of mathematics... Whatever mathematics does for the world, category theory does for mathematics" - Eugenia Cheng
+> "Category theory is the mathematics of mathematics... Whatever mathematics does for the world, category theory does for mathematics." - Eugenia Cheng
 
 Category theory aims to unify mathematics by studying mathematical structures and their relationships. Its objects of study are mathematical structures themselves, and many traditional mathematical concepts can be reformulated in category-theoretic language, offering deeper insights.
 

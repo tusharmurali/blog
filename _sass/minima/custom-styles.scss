@@ -11,3 +11,29 @@
         }
     }
 }
+
+#toc {
+    list-style-type: decimal;
+
+    > li {
+        counter-reset: item;
+
+        &::before {
+        counter-increment: item;
+        content: "";
+        }
+
+        ol {
+        list-style-type: none;
+
+        li {
+            counter-increment: subitem;
+
+            &::before {
+            padding-right: 0.6em;
+            content: counter(item) "." counter(subitem) ".";
+            }
+        }
+        }
+    }
+}

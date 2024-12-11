@@ -35,7 +35,7 @@ layout: base
 
   <div class="post-content e-content" itemprop="articleBody">
     {%- if page.toc != false -%}
-      {% include toc.html html=content ordered=page.ordered_toc %}
+      {% include toc.html html=content ordered=page.ordered_toc id="toc" %}
     {%- endif -%}
     {% include anchor_headings.html html=content anchorBody="#" %}
     <!-- {{ content }} -->

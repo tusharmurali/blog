@@ -186,15 +186,15 @@ V^* \\
 W^*
 \end{CD}$$
 </div>
-One verifies that this is functorial , i.e., respects identities and composition.
+One verifies that this is functorial, i.e., respects identities and composition.
 
-**Example.** There is a covariant functor from $\mathsf{Set}$ to $\mathsf{Set}$ whose action on objects is $X \mapsto \mathcal{P}(X)$ and whose action on morphisms $\begin{CD}
+**<a name="image-inverseimage"></a>Example.** There is a covariant functor from $\mathsf{Set}$ to $\mathsf{Set}$ whose action on objects is $X \mapsto \mathcal{P}X$ and whose action on morphisms $\begin{CD}
 X @\>{f}\>\> Y\end{CD}$ is the *image* $\begin{CD}
-\mathcal{P}(X) @\>{f}\>\> \mathcal{P}(Y)\end{CD}$. Indeed, we have $F(1_X)(A) = 1_X(A) = A$ and \\[F(g \circ f)(A) = (g \circ f)(A) = g(f(A)) = g(F(f)(A)) = F(g)(F(f)(A)).\\]
+\mathcal{P}X @\>{f}\>\> \mathcal{P}Y\end{CD}$. Indeed, we have $F(1_X)(A) = 1_X(A) = A$ and \\[F(g \circ f)(A) = (g \circ f)(A) = g(f(A)) = g(F(f)(A)) = F(g)(F(f)(A)).\\]
 
-Similarly, there is a contravariant functor from $\mathsf{Set}$ to $\mathsf{Set}$ whose action on objects is also $X \mapsto \mathcal{P}(X)$ and whose action on morphisms $\begin{CD}
+Similarly, there is a contravariant functor from $\mathsf{Set}$ to $\mathsf{Set}$ whose action on objects is also $X \mapsto \mathcal{P}X$ and whose action on morphisms $\begin{CD}
 X @\>{f}\>\> Y\end{CD}$ is the *inverse image* $\begin{CD}
-\mathcal{P}(Y) @\>{f^{-1}}\>\> \mathcal{P}(X)\end{CD}$.
+\mathcal{P}Y @\>{f^{-1}}\>\> \mathcal{P}X\end{CD}$.
 
 ### The Product Category
 
@@ -235,6 +235,55 @@ X @\>{f}\>\> Y\end{CD}$ in $\mathcal{C}$ is an epimorphism if for all $\begin{CD
 Y @\>{g}\>{h}\> Z
 \end{CD}$, if $g \circ f = h \circ f$, then $g = h$. For example, in $\mathsf{Set}$, the epimorphisms are surjections.
 
+## Natural Transformations
+Recall that for any finite-dimensional vector space $V$, there is an isomorphism $V \cong V^*$ whose definition involves arbitrarily choosing a basis for $V$. However, we have an isomorphism $V \cong V^{**}$ without making an arbitrary choice.
+
+**Definition.** Given functors $F,G \colon \mathcal{C} \to \mathcal{D}$, a **natural transformation** $\alpha \colon F \Rightarrow G$ is given by a family $(\begin{CD}
+FX @\>{\alpha_X}\>\> GX\end{CD})_{X \in \|\mathcal{C}\|}$ of **components** (maps in $\mathcal{D}$) indexed by objects in $\mathcal{C}$, that satisfies the **naturality condition**: 
+- for all 
+  $\begin{CD}
+  X @\>{f}\>\> Y\end{CD}$, the diagram
+  <div>
+  $$\begin{CD}
+  FX @>{\alpha_X}>> GX \\
+  @V{Ff} VV @VV{Gf} V \\
+  FY @>{\alpha_Y}>> GY
+  \end{CD}$$
+  </div>
+  commutes, i.e, $Gf \circ \alpha_X = \alpha_Y \circ Ff$.
+
+**Example.** For any vector space $V$, the map $\epsilon_V \colon V \to V^{\*\*}$ defined by $v \mapsto (f \in V^\* \mapsto f(v))$ is linear.[^linearisomorphism] The family $(\epsilon_V)_{V \in \mathsf{Vect}}$ defines a natural transformation $\epsilon \colon 1\_{\mathsf{Vect}} \Rightarrow (\cdot)^{\*\*}$, where $1\_{\mathsf{Vect}}$ is the identity functor and $(\cdot)^{\*\*}$ is the double-dual functor defined by the composition 
+$\$\begin{CD}
+\mathsf{Vect} @\>{(\cdot)^\*}\>\> \mathsf{Vect}^{\mathrm{op}} @\>{(\cdot)^\*}\>\> \mathsf{Vect}
+\end{CD}\$$
+One verifies that the naturality condition is satisfied: for all $\begin{CD}
+V @\>{l}\>\> W\end{CD}$, the square 
+\$$\minCDarrowwidth55pt\begin{CD}
+V @\>{v \mapsto (f \in V^\* \mapsto f(v))}\>\> V^{\*\*} \\\\\
+@V{l} VV @VV{F \in V^{\*\*} \mapsto (g \in W^\* \mapsto F(g \circ l))} V \\\\\
+W @\>{w \mapsto (f \in W^\* \mapsto f(w))}\>\> W^{\*\*}
+\end{CD}$\$
+commutes.
+
+**Example.** For any set $X$, we have functions 
+- $\\{\cdot\\}_X \colon X \to \mathcal{P}X$ defined by $x \mapsto \\{x\\}$
+
+- $\bigcup_X \colon \mathcal{P}\mathcal{P}X \to \mathcal{P}X$ defined by $\mathsf{Y} \mapsto \bigcup \mathsf{Y}$, where $\bigcup \mathsf{Y} := \\{x \in X \mid \exists X' \in \mathsf{Y},\; x \in X'\\}$.
+
+These define natural transformations $\\{\cdot\\} \colon 1\_{\mathsf{Set}} \Rightarrow \mathcal{P}$ and $\bigcup \colon \mathcal{P}^2 \Rightarrow \mathcal{P}$, respectively, where $\mathcal{P}^2 := \mathcal{P}\mathcal{P}$ and $\mathcal{P}$ is the *covariant powerset functor* whose action on morphisms is the *image* (see [Example](#image-inverseimage)).
+The naturality conditions are:
+<div>
+  $$\begin{CD}
+  X @>{\{\cdot\}_X}>> \mathcal{P}X \\
+  @V{f} VV @VV{\mathcal{P}f} V \\
+  Y @>{\{\cdot\}_Y}>> \mathcal{P}Y
+  \end{CD}\quad\quad\quad\quad \begin{CD}
+  \mathcal{P}^2 X @>{\bigcup_X}>> \mathcal{P}X \\
+  @V{\mathcal{P}^2 f} VV @VV{\mathcal{P}f} V \\
+  \mathcal{P}^2Y @>{\bigcup_Y}>> \mathcal{P}Y
+  \end{CD}$$
+  </div>
+
 ## Footnotes
 
 [^collection]: We use the informal word "collection" because we do not require that the objects in a category form a set.
@@ -245,3 +294,4 @@ Y @\>{g}\>{h}\> Z
 [^categorification]: Encoding mathematical structures in categories (and vice versa) is often called "categorification." In this vain, a monoid can be seen as a category with one object, and a group as a category in which every morphism is an isomorphism.
 [^posetcategorifications]: A preorder is a category with at most one morphism in every hom-class, and a poset is a category with at most one morphism in every hom-class and in which the only isomorphisms are the identities.
 [^problems]: We restrict the objects to small categories in order to avoid size problems and foundational problems.
+[^linearisomorphism]: If $V$ is finite-dimensional, this map is a linear isomorphism.

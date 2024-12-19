@@ -236,6 +236,8 @@ Y @\>{g}\>{h}\> Z
 \end{CD}$, if $g \circ f = h \circ f$, then $g = h$. For example, in $\mathsf{Set}$, the epimorphisms are surjections.
 
 ## Natural Transformations
+
+### What is a Natural Transformation?
 Recall that for any finite-dimensional vector space $V$, there is an isomorphism $V \cong V^*$ whose definition involves arbitrarily choosing a basis for $V$. However, we have an isomorphism $V \cong V^{**}$ without making an arbitrary choice.
 
 **Definition.** Given functors $F,G \colon \mathcal{C} \to \mathcal{D}$, a **natural transformation** $\alpha \colon F \Rightarrow G$ is given by a family $(\begin{CD}

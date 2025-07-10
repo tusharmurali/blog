@@ -4,7 +4,7 @@ title: About
 permalink: /about/
 ---
 
-I am a 21-year-old mathematics student at [ANU](https://anu.edu.au). You can find out more info about me, as well as my projects at [tusharmurali.github.io](https://tusharmurali.github.io/)
+I am a 22-year-old mathematics student at [ANU](https://anu.edu.au). You can find out more info about me, as well as my projects at [tusharmurali.com](https://tusharmurali.com/)
 
 You can find the source code for this website at GitHub:
 [tusharmurali][tusharmurali-organization] /

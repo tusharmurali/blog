@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Immolation Line: My Best Chess Composition"
+title: "The Immolation Line: My Best Chess Composition"
 tags: chess
 toc: false
 author:

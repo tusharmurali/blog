@@ -6,4 +6,4 @@
 //   "minima/skins/{{ site.minima.skin | default: 'classic' }}",
 //   "minima/initialize";
 
-@import "minima/custom-styles";
+@use "minima/custom-styles";

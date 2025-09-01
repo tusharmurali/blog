@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Pascal's Wager and the Failure of Probability"
+title: "Pascal's Wager and the Collapse of Probability"
 tags: philosophy
 toc: false
 author:
